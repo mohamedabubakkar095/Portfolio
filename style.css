@@ -1,0 +1,635 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    border:none;
+    outline:none;
+    scroll-behavior:smooth;
+    font-family:system-ui,-apple-system,sans-serif;
+}
+
+:root{
+    --bg-color:#ffffff;
+    --snd-bg-color:#d9fff9;
+    --text-color:#111827;
+    --main-color:#008c7a;
+}
+
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+}
+
+body{
+    background:var(--bg-color);
+    color:var(--text-color);
+}
+
+section{
+    padding:10rem 9% 3rem;
+} 
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:2rem 8%;
+    background:var(--main-color);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:3rem;
+    color:#fff;
+    font-weight:700;
+}
+
+.logo:hover{
+    color:#111;
+}
+
+.navbar a{
+    color:#fff;
+    font-size:1.8rem;
+    margin-left:3rem;
+    font-weight:600;
+    transition:.3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:#111;
+}
+
+#menu-icon{
+    display:none;
+    font-size:3rem;
+    color:#fff;
+}
+
+/* ==========================================
+   HOME
+========================================== */
+
+.home{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:6rem;
+}
+
+.home-img img{
+    width:34vw;
+    border-radius:50%;
+    box-shadow:0 0 25px var(--main-color);
+    transition:.4s;
+}
+
+.home-img img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 35px var(--main-color);
+}
+
+.home-content h3{
+    font-size:3.2rem;
+}
+
+.home-content h1{
+    font-size:6rem;
+    margin:.8rem 0;
+}
+
+.home-content p{
+    font-size:1.7rem;
+    line-height:1.8;
+}
+
+span{
+    color:var(--main-color);
+}
+
+/* ==========================================
+   SOCIAL
+========================================== */
+
+.social-media{
+    margin:3rem 0;
+}
+
+.social-media a{
+    width:45px;
+    height:45px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid var(--main-color);
+    border-radius:50%;
+    color:var(--main-color);
+    font-size:2rem;
+    margin-right:1.5rem;
+    transition:.3s;
+}
+
+.social-media a:hover{
+    background:var(--main-color);
+    color:#fff;
+    transform:translateY(-5px);
+}
+
+.btn{
+    display:inline-block;
+    padding:1.2rem 3rem;
+    background:var(--main-color);
+    color:#fff;
+    border-radius:40px;
+    font-size:1.6rem;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    box-shadow:0 0 20px var(--main-color);
+}
+
+/* ==========================================
+   ABOUT
+========================================== */
+
+.about{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6rem;
+    background:var(--snd-bg-color);
+    padding:6rem 9% 4rem;
+}
+
+.about-img img{
+    width:30vw;
+    border-radius:50%;
+    box-shadow:0 0 25px var(--main-color);
+}
+
+.heading{
+    font-size:5rem;
+    text-align:center;
+}
+
+.about-content h2{
+    text-align:left;
+    margin-bottom:2rem;
+}
+
+.about-content h3{
+    font-size:3rem;
+}
+
+.about-content p{
+    font-size:1.7rem;
+    line-height:1.8;
+    margin-top:2rem;
+}
+
+/* ==========================================
+   SERVICES
+========================================== */
+
+.services{
+    background:#fff;
+}
+.services{
+    padding: 8rem 9% 5rem;
+    min-height: auto;
+    padding: 8rem 9% 4rem;
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+
+.services-box{
+    background:var(--snd-bg-color);
+    padding:4rem 2rem;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s ease;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    padding: 2.5rem;
+    width:100%;
+}
+
+.services-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    transition: .4s ease;
+}
+
+.services-box i{
+    font-size:5rem;
+    color:var(--main-color);
+}
+
+.services-box h3{
+    font-size:2.8rem;
+    margin:2rem 0;
+}
+
+.services-box p{
+    font-size:1.6rem;
+    line-height:1.8;
+}
+
+/* ==========================================
+   PROJECTS
+========================================== */
+
+.projects{
+    background:var(--snd-bg-color);
+}
+
+.projects{
+    padding-top: 6rem 9% 4rem;
+}
+
+.projects-box{
+    width:100%;
+}
+
+.projects .heading{
+    margin-bottom:5rem;
+}
+
+/* 3 Equal Cards */
+
+.wrapper{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:3rem;
+}
+
+.projects-item{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.projects-item:hover{
+    transform:translateY(-10px);
+}
+
+.projects-item img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.projects-item h2{
+    text-align:center;
+    font-size:2.6rem;
+    margin:2rem 1rem 1rem;
+}
+
+.projects-item p{
+    font-size:1.6rem;
+    text-align:center;
+    line-height:1.8;
+    padding:0 2rem 2rem;
+}
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+.contact{
+    background:#fff;
+}
+
+.contact{
+    padding:6rem 9% 4rem;
+}
+
+.contact form{
+    max-width:800px;
+    margin:auto;
+}
+
+.input-box{
+    display:flex;
+    gap:2rem;
+}
+
+.input-box input,
+.contact textarea{
+    width:100%;
+    padding:1.5rem;
+    margin:1rem 0;
+    border:2px solid var(--main-color);
+    border-radius:10px;
+    font-size:1.6rem;
+}
+
+.contact textarea{
+    resize:none;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+    background:var(--snd-bg-color);
+    padding:4rem 0;
+    text-align:center;
+}
+
+.footer .social a{
+    width:45px;
+    height:45px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid var(--main-color);
+    border-radius:50%;
+    color:var(--main-color);
+    margin:0 .8rem;
+    transition:.3s;
+}
+
+.footer .social a:hover{
+    background:var(--main-color);
+    color:#fff;
+}
+
+.footer p{
+    font-size:1.6rem;
+    margin-top:2rem;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:991px){
+
+    html{
+        font-size:55%;
+    }
+
+    .home,
+    .about{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .home-img img,
+    .about-img img{
+        width:60vw;
+    }
+
+    .services-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    @media (max-width: 768px){
+
+    .services-container{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+    .wrapper{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    #menu-icon{
+        display:block;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+    .services-container{
+        grid-template-columns:1fr;
+    }
+
+    .wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .input-box{
+        flex-direction:column;
+    }
+
+    .home-img img,
+    .about-img img{
+        width:80vw;
+    }
+
+}
+
+@media(max-width:450px){
+
+    html{
+        font-size:50%;
+    }
+
+    .home-img img,
+    .about-img img{
+        width:90vw;
+    }
+
+}
+
+@media(max-width:768px){
+
+.skills-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+
+/* EXPERIENCE */
+
+.experience{
+    background: var(--snd-bg-color);
+    padding: 8rem 9% 5rem;
+}
+.experience-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:3rem;
+    margin-top:5rem;
+}
+
+.experience-box{
+    background:var(--bg-color);
+    border-radius:2rem;
+    padding:3rem;
+    text-align:center;
+    border:.2rem solid transparent;
+    transition:.4s ease;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+.experience-box:hover{
+    transform:translateY(-10px);
+    border-color:var(--main-color);
+}
+
+.experience-box i{
+    font-size:4rem;
+    color:var(--main-color);
+    margin-bottom:1.5rem;
+}
+
+.experience-box h3{
+    font-size:2.2rem;
+    margin-bottom:1rem;
+}
+
+.experience-box h4{
+    font-size:1.8rem;
+    color:var(--main-color);
+    margin-bottom:1rem;
+}
+
+.experience-box p{
+    font-size:1.5rem;
+    line-height:1.7;
+}
+
+
+
+.experience .heading{
+    margin-bottom: 5rem;
+}
+
+@media(max-width:991px){
+
+.experience-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+/* =========================
+   PROJECT BUTTONS
+========================= */
+
+.project-links{
+    display:flex;
+    justify-content:center;
+    gap:1.5rem;
+    padding:0 2rem 2rem;
+}
+
+.project-btn{
+    padding:1rem 2rem;
+    border-radius:30px;
+    font-size:1.5rem;
+    font-weight:600;
+    transition:.3s;
+    text-decoration:none;
+}
+
+.live-btn{
+    background:var(--main-color);
+    color:#fff;
+}
+
+.live-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 15px rgba(0,140,122,.4);
+}
+
+.github-btn{
+    border:2px solid var(--main-color);
+    color:var(--main-color);
+    background:#fff;
+}
+
+.github-btn:hover{
+    background:var(--main-color);
+    color:#fff;
+}
+
+
+/* ==========================
+   CERTIFICATES
+========================== */
+
+.certificates{
+    background: #fff;
+    padding: 8rem 9% 5rem;
+    min-height: auto;
+}
+
+.certificate-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.certificate-box{
+    background: var(--snd-bg-color);
+    padding: 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+    transition: .4s ease;
+}
+
+.certificate-box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.15);
+}
+
+.certificate-box i{
+    font-size: 5rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.certificate-box h3{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.certificate-box p{
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+
+@media(max-width:991px){
+    .certificate-container{
+        grid-template-columns:1fr;
+    }
+}
