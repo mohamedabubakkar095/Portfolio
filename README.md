@@ -2,9 +2,9 @@
 
 A responsive and modern personal portfolio website built with **HTML, CSS, and JavaScript** to showcase my skills, projects, certifications, and contact information.
 
-## 🚀 Live Demo
+## 🚀 Live Website
 
-🔗 https://mohamedabubakkar095.github.io/Portfolio/
+https://mohamed-abubakkar.vercel.app
 
 ---
 
