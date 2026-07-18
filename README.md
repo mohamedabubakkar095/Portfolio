@@ -62,7 +62,7 @@ Python Full Stack Developer
 
 ## 📫 Contact
 
-- 📧 Email: your-email@example.com
+- 📧 Email: mdabubakkar095@gmail.com
 - 💻 GitHub: https://github.com/mohamedabubakkar095
 - 🌐 Portfolio: https://mohamedabubakkar095.github.io/Portfolio/
 
