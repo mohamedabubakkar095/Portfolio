@@ -48,7 +48,7 @@ Portfolio/
 
 ## 📷 Screenshot
 
-> Add a screenshot of your portfolio homepage here.
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/74713fac-1d3b-4cc0-8316-61d5e2aea8f3" />
 
 ---
 
